@@ -31,13 +31,13 @@ Route::get('/article', function () {
 })->name('article');
 
 
-
 /*
 Route::post('/article/submit', function () {
     dd(Request::all());
 })->name('article-form');
 */
 
+Route::get('/article/all', [ArticleController::class, 'allData'])->name('article-data');
 
 Route::post('/article/submit', [ArticleController::class, 'submit'])->name('article-form');
 

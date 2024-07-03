@@ -19,12 +19,19 @@ class ArticleController extends Controller
 
         return redirect()->route('home')->with('success', 'Данные успешно внесены в таблицу');
 
-
-
         /*$validation = $req->validate([
             'articleName' => 'required|min:5|max:100',
             'pseudonymName' => 'required|min:3|max:100',
             'textArea1' => 'required|min:5|max:1000'
     ]);*/
     }
+
+    public function allData() {
+        $article = Article::all();
+       return view('article-data', ['data' => Article::all()]);
+        
+        //dd($article);
+    }
+
+
 }

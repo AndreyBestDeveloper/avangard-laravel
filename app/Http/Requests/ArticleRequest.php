@@ -25,7 +25,7 @@ class ArticleRequest extends FormRequest
         return [
             'articleName' => 'required|min:3|max:100',
             'pseudonymName' => 'required|min:3|max:100',
-            'textArea1' => 'required|min:5|max:1000'
+            'textArea1' => 'required|min:5|max:5000'
         ];
     }
 
@@ -42,7 +42,7 @@ class ArticleRequest extends FormRequest
  
             'textArea1.required' => 'Поле Текст статьи является обязательным',
             'textArea1.min' => 'В Текстеи статьи должно быть не менее пяти символов',
-            'textArea1.max' => 'В Тексте статьи должно быть не более тысячи символов'
+            'textArea1.max' => 'В Тексте статьи должно быть не более пяти тысяч символов'
         ];
     }
 

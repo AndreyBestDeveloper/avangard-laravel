@@ -15,7 +15,10 @@
                 <a class="nav-link" href="{{ route('about') }}">О нас</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('article') }}">Статьи</a>
+                <a class="nav-link" href="{{ route('article') }}">Опубликовать</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ route('article-data') }}">Статьи</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{{ route('schedule') }}">Расписание</a>

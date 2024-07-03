@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title-block')Статьи@endsection
+@section('title-block')Опубликовать@endsection
 
 @section('content')
       
@@ -48,12 +48,5 @@
         </div>
       </div>
 
-      <div class="container-fluid">
-        <div class="row">
-          <div class="text-center col-12">
-            <h1 class="montserrat-200">Список статей</h1>
-          </div>
-        </div>
-      </div>
 
 @endsection
