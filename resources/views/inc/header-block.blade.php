@@ -29,9 +29,8 @@
             </ul>
           </div>
             <a class="navbar-brand">
-            <img src="{{asset('/storage/img/icon/gant.ico')}}" alt="Гантелька"/>
-            </a>    
-
+              <img src="{{asset('/storage/img/icon/gant.ico')}}" alt="Гантелька"/>
+            </a> 
         </div>
       </nav>
 <!--Секцию не закрываем-->
