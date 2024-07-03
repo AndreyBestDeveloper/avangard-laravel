@@ -14,10 +14,6 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
-Route::get('/trainer', function () {
-    return view('trainer');
-})->name('trainer');
-
 Route::get('/schedule', function () {
     return view('schedule');
 })->name('schedule');

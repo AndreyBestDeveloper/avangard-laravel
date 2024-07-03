@@ -5,7 +5,7 @@
 @section('content')
 
 <h1 class="montserrat-200">Публикация статьи</h1>
-
+<!--
 @if($errors->any())
   <div class="alert alert-danger">
     <ul>
@@ -15,7 +15,7 @@
     </ul>
   </div>
 @endif
-
+-->
 
 <div class="container-fluid pb-5">
   <form action="{{ route('article-form') }}" method="post">

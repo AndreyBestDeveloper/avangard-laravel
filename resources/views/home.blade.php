@@ -87,8 +87,8 @@
       </div>
     <div class="col-sm-12 col-md-6 col-lg-6">     
       <br><h1 class="text text-black montserrat-200">Приведите друга - получите 50% скидку на Ваш абонемент.
-        <img src="obsh/icon/hart_cl_1.ico"/><br>
-        + друг получит 50 грн скидку на свой абонемент.</h1>
+      <img class="img-fluid" src="{{asset('/storage/img/icon/gant.ico')}}"  alt="Гантелька">
+        <br>+ друг получит 50 грн скидку на свой абонемент.</h1>
         <ul class="text-black montserrat-200">
           <li>Количество друзей неограничено !!!</li>
           <li>Если абонемен куплен, скидка переносится на следующий месяц</li>
@@ -105,8 +105,8 @@
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6">  
       <br><h1 class="text text-black montserrat-200">Предложение для студентов и школьников. БЕСПЛАТНЫЙ абонемент!!!
-        <img src="obsh/icon/gant.ico"/><br>
-        Экономите или проблемы с финансами? Это не повод пропускать тренировки.</h1>
+      <img class="img-fluid" src="{{asset('/storage/img/icon/hart_cl_1.ico')}}"  alt="Сердечко">
+        <br>Экономите или проблемы с финансами? Это не повод пропускать тренировки.</h1>
         <ul class="text-black montserrat-200">
           <li>Раздайте 250 визиток</li>
           <li>Получите БЕСПЛАТНЫЙ абонемент в тренажёрный зал на 8 занятий</li>

@@ -18,9 +18,6 @@
                 <a class="nav-link" href="{{ route('article') }}">Статьи</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('trainer') }}">Тренер</a>
-              </li>              
-              <li class="nav-item">
                 <a class="nav-link" href="{{ route('schedule') }}">Расписание</a>
               </li>
               <li class="nav-item">

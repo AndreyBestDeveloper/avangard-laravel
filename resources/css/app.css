@@ -1,0 +1,28 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(230, 229, 229);
+    /*background-image: url('../storage/img/fon/fon_A1_1.png');	*/
+  }
+  
+  .nav-link {
+    font-size: 1.2em;
+  }
+  
+  .navbar-nav li {
+    padding-right: 10px;   
+  } 
+  
+  .montserrat-100 {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 100;
+      font-style: normal;
+    }
+  
+  .montserrat-200 {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal;
+    }
