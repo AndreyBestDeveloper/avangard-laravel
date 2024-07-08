@@ -15,7 +15,7 @@
             <h2 class="montserrat-200">Для публикации статьи, заполните форму</h2>
             
             <div class="container-fluid pb-5">
-              <form action="{{ route('article-form') }}" method="post">
+              <form action="{{ route('publish-submit') }}" method="post">
                 @csrf
                 <div class="mb-3">
                   <label for="articleName" class="form-label">Название статьи</label>

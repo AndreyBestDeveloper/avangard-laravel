@@ -26,9 +26,9 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
-Route::get('/article', function () {
-    return view('article');
-})->name('article');
+Route::get('/publish', function () {
+    return view('publish');
+})->name('publish');
 
 
 /*
@@ -37,9 +37,16 @@ Route::post('/article/submit', function () {
 })->name('article-form');
 */
 
-Route::get('/article/all', [ArticleController::class, 'allData'])->name('article-data');
-
-Route::post('/article/submit', [ArticleController::class, 'submit'])->name('article-form');
 
 
+Route::post('/publish/submit', [ArticleController::class, 'publishSubmit'])->name('publish-submit'); // кнопка формы Опубликовать
+
+Route::get('/publication/list', [ArticleController::class, 'publicationList'])->name('publication-list'); // кнопка меню Статьи 
+
+Route::get('/publication/text/{id}', [ArticleController::class, 'publicationText'])->name('publication-text'); // кнопка выполнения Читать
+
+
+Route::get('/publication/update/{id}', [ArticleController::class, 'publicationUpdate'])->name('publication-update'); // кнопка выполнения Редактировать
+
+//Route::post('/publication/submit/{id}', [ArticleController::class, 'publicationSubmit'])->name('publication-submit'); // кнопка формы Обновить
 
