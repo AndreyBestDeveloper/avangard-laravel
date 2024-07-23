@@ -122,13 +122,12 @@
 
 @endsection
 
-@section('footer-block')
+
+@section('header-block')
   @parent
-  <p>footer of the home page</p>
+    <a href="{{ route('register') }}"><button class="btn btn-outline-dark btn-sm mx-2">Регистрация</button></a>
+    <a href="{{ route('loginform') }}"><button class="btn btn-dark btn-sm mx-2">Вход в кабинет</button></a>
 @endsection
-
-
-
 
 
 

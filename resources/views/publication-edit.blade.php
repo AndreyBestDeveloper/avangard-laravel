@@ -1,15 +1,14 @@
 @extends('layouts.app')
 
-@section('title-block')Редактировать статью@endsection
+@section('title-block')Обновление публикации@endsection
 
 @section('content')
 
-1234
-<!--      
+<!--Форма для корректировки текста-->
         <div class="container-fluid">
-            <h2 class="montserrat-200">Редактировать статью</h2>            
+            <h2 class="montserrat-200">Обновление публикации</h2>            
           <div class="container-fluid pb-5">
-              <form action="" method="post">
+              <form action="{{ route('publication-change', $data->id) }}" method="post">
                 @csrf
                 <div class="mb-3">
                   <label for="articleName" class="form-label">Название статьи</label>
@@ -28,7 +27,7 @@
               </form>
           </div>
         </div>
--->
-<!--{{ route('publication-submit'), $data->id }}-->
+
+<!---->
 
 @endsection

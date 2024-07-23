@@ -19,11 +19,6 @@ class ArticleController extends Controller
 
         return redirect()->route('publication-list')->with('success', 'Данные успешно внесены в таблицу');
 
-        /*$validation = $req->validate([
-            'articleName' => 'required|min:5|max:100',
-            'pseudonymName' => 'required|min:3|max:100',
-            'textArea1' => 'required|min:5|max:1000'
-        ]);*/
     }
 
 
@@ -40,12 +35,12 @@ class ArticleController extends Controller
     }
 
    
-    public function publicationUpdate($id){
+    public function publicationEdit($id){
         $article = new Article;
-        return view('publication-update', ['data' => $article->find($id)]);
+        return view('publication-edit', ['data' => $article->find($id)]);
     }
-/*
-    public function publicationSubmit($id, ArticleRequest $req) {
+
+    public function publicationChange($id, ArticleRequest $req){
 
         $article = Article::find($id);
         $article->articleName = $req->input('articleName');
@@ -54,10 +49,14 @@ class ArticleController extends Controller
 
         $article->save();
 
-        return redirect()->route('publication-text', $id)->with('success', 'Статья была обновлена');
+        return redirect()->route('publication-list')->with('success', 'Публикация была обновлена');
     }
-*/
 
 
+
+    public function publicationDelete($id){
+        Article::find($id)->delete();
+        return redirect()->route('publication-list')->with('success', 'Публикация была удалена');
+    }
 
 }

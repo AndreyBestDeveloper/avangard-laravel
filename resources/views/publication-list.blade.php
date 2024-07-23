@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('title-block')Статьи@endsection
+@section('title-block')Список публикаций@endsection
 
 @section('content')
 
-<h1 class="montserrat-200">Список статей</h1>
+<h1 class="montserrat-200">Список публикаций</h1>
 
 @foreach($data as $el)
 

@@ -94,7 +94,7 @@
     </div>
     <div class="col-sm-12 col-md-10 col-lg-10">  
       <br><h1 class="text text-black montserrat-200">Время работы зала очень широко
-        <img src="obsh/icon/gant.ico"/><br>Каждый клиент может подобрать любое, удобное для тренировок</h1>
+      <img src="{{asset('/storage/img/icon/gant.ico')}}" alt="Гантелька"/><br>Каждый клиент может подобрать любое, удобное для тренировок</h1>
     </div>
     <div class="col-sm-0 col-md-1 col-lg-1">     
     </div>
